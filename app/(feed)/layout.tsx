@@ -1,3 +1,6 @@
+import LeftSideBar from "@/components/LeftSideBar";
+import Navbar from "@/components/Navbar";
+import RightSideBar from "@/components/RightSideBar";
 import {Metadata} from "next"
 
 
@@ -16,11 +19,13 @@ export default function RootLayout({
 }) {
   return(
     <div className="h-full">
-      {/* Navbar */}
-      <div className="flex items-center justify-center">
-        {/* left bar */}
+     <Navbar/>
+      <div className="flex items-start pt-[56.67px] h-full">
+       <LeftSideBar/>
+       <div className="pl-0 md:pl-20  lg:pl-60">
         { children }
-        {/* right bar */}
+        </div>
+        <RightSideBar/>
       </div>
 {/* footer */}
     </div>
