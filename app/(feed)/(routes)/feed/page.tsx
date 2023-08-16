@@ -12,7 +12,7 @@ export const metadata: Metadata = {
  const FeedPage = ()=>{
     return(
         <div>
-            
+            Feed Page
         </div>
     )
 }

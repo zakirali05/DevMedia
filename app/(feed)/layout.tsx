@@ -1,3 +1,4 @@
+import BottomBar from "@/components/BottomBar";
 import LeftSideBar from "@/components/LeftSideBar";
 import Navbar from "@/components/Navbar";
 import RightSideBar from "@/components/RightSideBar";
@@ -22,12 +23,12 @@ export default function RootLayout({
      <Navbar/>
       <div className="flex items-start pt-[56.67px] h-full">
        <LeftSideBar/>
-       <div className="pl-0 md:pl-20  lg:pl-60">
+       <div className="pl-0 md:pl-20  lg:pl-60 ">
         { children }
         </div>
         <RightSideBar/>
       </div>
-{/* footer */}
+<BottomBar/>
     </div>
   ) 
 }
