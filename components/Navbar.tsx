@@ -16,7 +16,7 @@ const montserrat = Montserrat({subsets:["latin"]})
 const Navbar = () => {
     const { setTheme } = useTheme()
   return (
-    <nav className="flex items-center justify-between px-4 py-2 border-b fixed w-full">
+    <nav className="flex dark:bg-slate-900 bg-muted  items-center justify-between px-4 py-2 border-b fixed w-full">
         <h1 className={cn("font-bold text-lg cursor-pointer",montserrat.className)}>DevMedia.</h1>
         <div className="flex items-center justify-center gap-2">
       <Button variant="ghost" size="icon">

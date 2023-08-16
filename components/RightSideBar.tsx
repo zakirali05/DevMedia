@@ -59,8 +59,8 @@ const RightSideBar = () => {
                 height={100}
                 />
                 <div className="flex flex-col items-start justify-start ">
-                  <h2 className="font-[600]">{user.username}</h2>
-                  <p className="text-sm font-medium text-muted-foreground">{user.bio.slice(0,10)}...</p>
+                  <h2 className="font-[600] text-sm">{user.username}</h2>
+                  <p className="text-xs font-medium text-muted-foreground">{user.bio.slice(0,10)}...</p>
                 </div>
               </div>
               <Button className="bg-purple-500 text-white">Follow</Button>
