@@ -38,7 +38,7 @@ const links = [
 const BottomBar = () => {
     const path = usePathname()
   return (
-    <div className="fixed  bottom-0 p-4 border-t  block  md:hidden w-full bg-muted dark:bg-slate-900 ">
+    <div className="fixed   bottom-0 p-4 border-t  block  md:hidden w-full bg-muted dark:bg-slate-900 ">
         <div className="w-full h-full flex items-center justify-between px-4">
             {links.map((link)=>(
 

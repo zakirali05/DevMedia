@@ -23,7 +23,7 @@ export default function RootLayout({
      <Navbar/>
       <div className="flex items-start pt-[56.67px] h-full">
        <LeftSideBar/>
-       <div className="ml-0 md:ml-20  lg:ml-60 p-4 ">
+       <div className="ml-0 md:ml-20  lg:ml-60 p-8 lg:mr-80 ">
         { children }
         </div>
         <RightSideBar/>

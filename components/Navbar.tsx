@@ -8,7 +8,7 @@ import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigge
 import { Button } from "./ui/button"
 import { Moon, Sun , Bell } from "lucide-react"
 import Link from "next/link"
-
+import Image from "next/image"
 
 const montserrat = Montserrat({subsets:["latin"]})
 
@@ -16,8 +16,14 @@ const montserrat = Montserrat({subsets:["latin"]})
 const Navbar = () => {
     const { setTheme } = useTheme()
   return (
-    <nav className="flex dark:bg-slate-900 bg-muted  items-center justify-between px-4 py-2 border-b fixed w-full">
+    <nav className="flex bg-muted dark:bg-slate-900  items-center justify-between px-4 py-2 border-b fixed w-full">
+      <div className="flex items-center justify-center gap-3">
+        {/* <Image src="/DM.png" alt="logo" width="100" height="100" className="h-9 w-9 rounded-full" /> */}
+        <h1 id="hide"  className="p-[0.5rem] font-bold  text-sm text-[cursive] dark:bg-white dark:text-black rounded-full bg-black text-white">
+          DM
+        </h1>
         <h1 className={cn("font-bold text-lg cursor-pointer",montserrat.className)}>DevMedia.</h1>
+        </div>
         <div className="flex items-center justify-center gap-2">
       <Button variant="ghost" size="icon">
        <Link href="/notifications"><Bell className="w-5 h-5"/></Link> 

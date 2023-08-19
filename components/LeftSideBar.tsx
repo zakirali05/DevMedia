@@ -45,7 +45,7 @@ const LeftSideBar = () => {
    const path = usePathname()
    
   return (
-    <div className="hidden md:flex md:w-20  lg:w-60 bg-muted dark:bg-slate-900   fixed  items-start justify-center    h-full">
+    <div className="hidden md:flex md:w-20  lg:w-60 border-r   fixed  items-start justify-center    h-full">
     <div className="flex flex-col items-center justify-center gap-3 mt-10 lg:p-4 w-full">
         {links.map((link)=>(
            
